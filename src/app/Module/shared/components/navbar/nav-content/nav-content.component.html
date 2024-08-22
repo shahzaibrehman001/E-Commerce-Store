@@ -1,0 +1,36 @@
+<div class="w-full">
+  <div class="bg-gray-950 text-white w-full h-1/2 shadow-lg p-6">
+    <div class="flex justify-around">
+      <div
+        class="flex flex-col"
+        *ngFor="let item of category[selectedSection].sections"
+      >
+        <h1 class="text-center">{{ item.name }}</h1>
+
+        <button class="p-2 hover:bg-gray-800 hover:p-2" mat-button *ngFor="let section of item.items">
+          {{ section.name }}
+        </button>
+      </div>
+      <div class="hidden lg:block">
+        <div class="mb-5">
+          <img
+            class="w-[19rem] h-[20rem] object-cover object-top rounded-md"
+            src="https://silayipret.com/cdn/shop/files/WhatsAppImage2024-01-08at19.24.22.jpg?v=1704729377&width=1100"
+            alt=""
+          />
+        </div>
+        <p class="text-gray-600">New Arrival</p>
+      </div>
+      <div class="hidden lg:block">
+        <div class="mb-5">
+          <img
+            class="w-[19rem] h-[20rem] object-cover object-top rounded-md"
+            src="https://easternfashion.pk/cdn/shop/products/9_6e0b36f9-9801-41ed-925e-82edf2300606_533x.jpg?v=1667981218"
+            alt=""
+          />
+        </div>
+        <p class="text-gray-600">New Arrival</p>
+      </div>
+    </div>
+  </div>
+</div>
