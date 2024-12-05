@@ -11,7 +11,7 @@
 
       <div class="">
         <div class="flex items-center space-x-4">
-          <a routerLink="/" class="text-gray-800 font-semibold text-lg"> Urban Elegance </a>
+          <a routerLink="/" class="text-gray-800 font-semibold text-lg"> Roots & Threads </a>
           <div>
             <button
               class="open-button"
@@ -50,7 +50,7 @@
             <img class="h-12 w-12 rounded-full" src="assets\images\MyPicture.jpeg" alt="" />
           </button>
           <mat-menu #profileMenu="matMenu">
-            <button mat-menu-item>Orders</button>
+            <button (click)="navigateTo('account/orders')" mat-menu-item>Orders</button>
             <button mat-menu-item>Profile</button>
             <button mat-menu-item>Logout</button>
           </mat-menu>

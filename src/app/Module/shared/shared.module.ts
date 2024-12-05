@@ -6,6 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
+import { AddressCardComponent } from './components/address-card/address-card.component';
+import { OrderTrackerComponent } from './components/order-tracker/order-tracker.component';
 
 
 
@@ -18,13 +22,21 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    ProductCardComponent
+    ProductCardComponent,
+    CartItemComponent,
+    StarRatingComponent,
+    AddressCardComponent,
+    OrderTrackerComponent
   ],
 
   exports: [
     NavbarComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    CartItemComponent,
+    StarRatingComponent,
+    AddressCardComponent,
+    OrderTrackerComponent
   ]
 })
 export class SharedModule { }

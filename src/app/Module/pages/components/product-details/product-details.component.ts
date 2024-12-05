@@ -9,6 +9,7 @@ import { mens_kurta } from '../../../../../Data/Men/men_kurta';
 import { SharedModule } from "../../../shared/shared.module";
 import { ProductCardComponent } from "../../../shared/components/product-card/product-card.component";
 import { StarRatingComponent } from "../../../shared/components/star-rating/star-rating.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-details',
@@ -23,6 +24,9 @@ export class ProductDetailsComponent {
   reviews = [1, 1, 1];
   relatedProducts:any;
 
+  constructor(private router:Router){
+
+  }
 
   ngOnInit(){
     this.relatedProducts=mens_kurta;
@@ -30,6 +34,8 @@ export class ProductDetailsComponent {
 
   handleAddToCard() {
     console.log('Selected Size : ', this.selectedSize)
+
+    this.router.navigate(['cart'])
   }
 
 }
